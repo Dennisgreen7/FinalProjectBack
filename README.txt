@@ -11,7 +11,7 @@ the database has 6 tabels (Books, Users, Geners, Authours and Borrows).
 Authours and Geners has One-to-many relationship with Books.
 Users and Books has Many-to-many relationship that conenects with Borrows.
 
-Server Side:
+Server Side Api dont net 6:
 the server side is an API that contains 5 dlls (Dto,Models,Repositories,Uow,Validator).
 
 Dto:
