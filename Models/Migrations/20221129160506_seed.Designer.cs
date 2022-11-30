@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Models.Models;
 
@@ -11,9 +12,10 @@ using Models.Models;
 namespace Models.Migrations
 {
     [DbContext(typeof(LibraryContext))]
-    partial class LibraryContextModelSnapshot : ModelSnapshot
+    [Migration("20221129160506_seed")]
+    partial class seed
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -220,6 +222,17 @@ namespace Models.Migrations
                         .HasName("PK_Borrowers");
 
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            UsersId = 100,
+                            UsersEmail = "admin@gmail.com",
+                            UsersFirstName = "Admin",
+                            UsersLastName = "Admin",
+                            UsersRole = "Admin",
+                            UsersUserName = "Admin23456"
+                        });
                 });
 
             modelBuilder.Entity("Models.Models.Book", b =>

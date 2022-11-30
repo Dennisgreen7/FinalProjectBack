@@ -48,7 +48,14 @@ namespace Repositories.Implementations
                 user.UsersUserName = newUser.UsersUserName;
                 user.UsersPasswordHash = passwordHash;
                 user.UsersPasswordSalt = passwordSalt;
-                user.UsersRole = "Client";
+                if (user.UsersUserName == "Admin") {
+                    user.UsersRole = "Admin";
+                }
+                else
+                {
+                    user.UsersRole = "Client";
+                }
+                
 
                 var errorMssg = _validator.UserValidation("Registration", newUser.UsersUserName, newUser.UsersFirstName, newUser.UsersLastName, user.UsersRole, newUser.UsersEmail, newUser.UsersPassword);
 

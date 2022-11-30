@@ -85,6 +85,21 @@ unregistered user can accses only the home, books, about-us, login and regestret
 client user can accses the home, books, about-us, his borrows, login and regestretion.
 admin user can accses all the pages.
 
+הערה לבודק!!!!
+הסיסמאות שבתוך העתק מסד הנתונים.
+Admin pass:
+userNameRonaldo
+password g
+
+Client Pass:
+Cr7Siui
+Cr7Cr7Cr7
+מוגש עותק של מסד הנתונים אך במידה ואתה לא רוצב לשחזר.
+כך תוכל לגשת לאדמין
+ברגע ההרשמה המשתמש נרשם כלקוח לכן על מנת שתוכל לבדוק את צד האדמין של האתר ערכתי את פונקצייתה ההרשמה כך שברגע ששם המשתמש הוא
+"Admin"
+המשתמש ירשם כאדמין זה נועד אך ורק בשביל שתוכל להחזיק במשתמש אדמין לשם הבדיקה.
+
 
 
 

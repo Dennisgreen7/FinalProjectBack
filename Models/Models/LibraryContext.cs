@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace Models.Models
 {
@@ -157,7 +154,7 @@ namespace Models.Models
             });
 
             OnModelCreatingPartial(modelBuilder);
-        }
+         }
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }

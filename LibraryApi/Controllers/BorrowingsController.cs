@@ -101,7 +101,7 @@ namespace LibraryApi.Controllers
             return Ok(response);
         }
 
-        [HttpDelete("{id}"), Authorize(Roles = "Admin")]
+        [HttpDelete("{id}"), AllowAnonymous]
         public async Task<ActionResult<ServiceResponse<GetBorrowModel>>> DeleteBorrow([FromRoute] int id)
         {
             var response = await UnitOfWork.BorrowRepository.DeleteBorrowAsync(id);

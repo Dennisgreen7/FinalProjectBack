@@ -52,7 +52,7 @@ namespace LibraryApi.Controllers
             return Ok(response);
         }
 
-        [HttpGet("FilterBooks/{filterIndex}")]
+        [HttpGet("FilterBooks/{filterIndex}"), AllowAnonymous]
         public async Task<ActionResult<ServiceResponse<List<GetBookModel>>>> FilterBooks([FromRoute] int filterIndex, [FromQuery] string searchValue)
         {
             var response = await UnitOfWork.BookRepository.FilteBook(filterIndex, searchValue, _environment);

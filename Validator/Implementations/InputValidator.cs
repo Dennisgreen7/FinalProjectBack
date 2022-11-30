@@ -201,7 +201,7 @@ namespace Validator.Implementations
                         }
                         break;
                     case "fname":
-                        if (InputValidation(value, "^[A-Z][a-z]*$", "First Name must have only string with Upper Case first char ") != "")
+                        if (InputValidation(value, "^[A-Z][a-zA-Z ]*", "First Name must have only string with Upper Case first char ") != "")
                         {
                             return "First Name must have only string with Upper Case first char " + "\n";
                         }
@@ -211,7 +211,7 @@ namespace Validator.Implementations
                         }
                         break;
                     case "lname":
-                        if (InputValidation(value, "^[A-Z][a-z]*$", "Last Name must have only string with Upper Case first char") != "")
+                        if (InputValidation(value, "^[A-Z][a-zA-Z ]*", "Last Name must have only string with Upper Case first char") != "")
                         {
                             return "Last Name must have only string with Upper Case first char " + "\n";
                         }
