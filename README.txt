@@ -45,7 +45,7 @@ one is with a request and the other one is by putting the img inside wwwroot\Upl
 the other on is manually by creating a folder by the user/book id and the name should be image.png.
 all the controllers are Authorize with  some functions that are role based and some are open to all.
 
-client side:
+Client side Angular 14:
 the windows that are in the client side:
 Home section has the welcome of the user and explains in 3 steps how to borrow with a redirection to the books.
 and shows 3 books.
